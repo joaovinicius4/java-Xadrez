@@ -47,7 +47,11 @@ public class Tabuleiro {
 	
 	public boolean posicaoExiste(Posicao posicao) {
 			return posicaoExiste(posicao.getLinha(), posicao.getColuna());
-		}
+	}
+	
+	public boolean temPeca(Posicao posicao) {
+		return peca(posicao) != null;
+	}
 	
 
 	}
