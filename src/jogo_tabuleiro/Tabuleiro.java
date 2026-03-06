@@ -41,4 +41,15 @@ public class Tabuleiro {
 		peca.posicao = posicao; // como coloquei protected eu consigo acessar dentro do mesmo pacote;
 	}
 	
-}
+	private boolean posicaoExiste(int linha, int coluna) {
+		return linha >= 0 && linha < linhas && coluna >= 0 && coluna < colunas;
+	}
+	
+	public boolean posicaoExiste(Posicao posicao) {
+			return posicaoExiste(posicao.getLinha(), posicao.getColuna());
+		}
+	
+
+	}
+	
+
