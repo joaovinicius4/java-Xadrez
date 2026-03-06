@@ -2,11 +2,11 @@ package xadrez;
 
 import jogo_tabuleiro.Tabuleiro;
 
-public class partidaXadrez {
+public class PartidaXadrez {
 
 	private Tabuleiro tabuleiro;
 
-	public partidaXadrez() {
+	public PartidaXadrez() {
 		tabuleiro = new Tabuleiro(8, 8);
 	}
 	
