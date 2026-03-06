@@ -7,6 +7,9 @@ public class Tabuleiro {
 	private Peca[][] pecas;
 	
 	public Tabuleiro(int linhas, int colunas) {
+		if(linhas < 1 || colunas < 1) {
+			throw new ExcecaoTabuleiro("Erro: é necessario que tenha pelo menos uma linha e coluna");
+		}
 		this.linhas = linhas;
 		this.colunas = colunas;
 		pecas = new Peca[linhas][colunas];
